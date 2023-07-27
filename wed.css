@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F5F3EA;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+
+}
+#nav{
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+   
+}
+#nav h2{
+    margin-left: 1%;
+    font-family: 'Neuton Regular';
+    font-size: 35px;
+    font-weight: 1000;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav2 h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+#nav3{
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    
+}
+#nav3 button{
+    padding: 13px 20px;
+    border: none;
+    background-color: #151B31;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#nav3 h4{
+    padding-right: 25px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #FF5858;
+}
+#nav3 i{
+    padding-right: 20px;
+    font-size: 20px;
+    margin-bottom: 3px;
+    transition: all ease 0.5s;
+}
+#nav3 i:hover{
+    color: #FF5858;
+}
+#menu{
+    height: 100vh;
+    width: 61vw;
+    background-color: white;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    left: -100%;
+    transition: all ease 0.3s;
+}
+#menu h2{
+    margin-left: 4%;
+    font-family: 'Neuton Regular';
+    font-size: 35px;
+    font-weight: 100;
+    color: #1b2444;
+}
+#menu span{
+    color: #FF5858;
+    font-family: 'Neuton Regular';
+    font-size: 45px;
+    letter-spacing: -5px;
+    
+}
+#menu i{
+    
+    font-size: 35px;
+    margin-top: 18px;
+    margin-right: 10px;
+    
+}
+#mem{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+
+}
+.mau{
+    width: 100%;
+    height: 17%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mau h4{
+    padding-left: 3%;
+    font-weight: 100;
+    font-size: 16px;
+    color: #5c5b5b;
+    
+}
+.mau h4:hover{
+    color: #FF5858;
+}
+#mem .mau i{
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 800;
+}
+#nav span{
+    color: #FF5858;
+    font-family: 'Neuton Regular';
+    font-size: 45px;
+    
+}
+#cen{
+   
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+#cen h1{
+    font-size: 70px;
+    font-family: 'Neuton Regular';
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    color: #151B31;
+    flex-wrap: wrap;
+}
+#cen h4{
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #1b2444;
+}
+#cen h1 span{
+    color: #FF5858;
+    letter-spacing: 5px;
+}
+img{
+    height: 80%;
+    width:  80%;
+    margin-top: 30%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#nav3 #men{
+    display: none;
+}
+@media(max-width: 767px){
+    #nav2 h4{
+        display: none;
+    }
+    #cen h1{
+        font-size: 40px;
+        line-height: 120%;
+        
+    }
+    #cen{
+        width: 100vw;
+        
+        
+    }
+    #nav3 button{
+        display: none;
+    }
+    #nav3 h4{
+        display: none;
+    }
+    img{
+        padding-top: 15%;
+    }
+    #nav3 #men{
+        display: block;
+    }
+}
