@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Neuton Regular';
+    src: url(./Neuton-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +15,8 @@ html,body{
     min-height: 100vh;
     width: 100%;
     background-color: #F5F3EA;
-    overflow: hidden;
-    border-bottom: 2px solid black;
+    
+    border-bottom: 1px solid black;
 
 }
 #nav{
@@ -151,13 +155,13 @@ html,body{
 
 }
 #cen h1{
-    font-size: 70px;
+    font-size: 5vw;
     font-family: 'Neuton Regular';
     word-spacing: 15px;
     letter-spacing: 5px;
     line-height: 80px;
     color: #151B31;
-    flex-wrap: wrap;
+    
 }
 #cen h4{
     line-height: 60px;
@@ -170,27 +174,138 @@ html,body{
     letter-spacing: 5px;
 }
 img{
-    height: 80%;
-    width:  80%;
+    height: 100vh;
+    width: 80%;
     margin-top: 30%;
     margin-left: 10%;
-    flex-wrap: wrap;
-    overflow: hidden;
+    
+    
 }
 #nav3 #men{
     display: none;
 }
-@media(max-width: 767px){
+
+#page2{
+    min-height:100vh ;
+    width: 100%;
+    background-color: #F5F3EA;
+}
+#nad{
+    height: 30vh;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#nad h1{
+    font-family: 'Neuton Regular';
+    font-size: 4vw;
+    line-height: 100px;
+    letter-spacing: 3px;
+    color: #151B31;
+    padding-top: 100px;
+}
+#nad p{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight:100;
+    color: #6D6F75;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+#nad2{
+    margin-top: 60px;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+.elem{
+    height: 90vh;
+    width: 30%;
+    border-radius: 5px;
+    margin: 30px 20px;
+   transition: all ease 0.3s;
+}
+.elem:hover{
+    background-color: #FFB07B;
+    
+}
+.elem img{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 97%;
+    height: 87%;
+    border-bottom: 3px solid #151B31;
+    border-right:3px solid #151B31;
+    border-left: 1px solid #151B31;
+    border-top:1px solid #151B31 ;
+    border-radius: 5px;
+    
+}
+.elem:hover img{
+    filter: grayscale();
+}
+.elem h3{
+    font-family: 'Neuton Regular';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 15px;
+    letter-spacing: 3px;
+    
+}
+.elem:hover h3{
+    color: white;
+}
+#nad3{
+    height: 30vh;
+    width: 100%;
+  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nad3 h2{
+    color: #151B31;
+    font-family: 'Neuton Regular';
+    font-size: 4vw;
+    margin-top: 0;
+    line-height: 80px;
+    letter-spacing: 3px;
+}
+#nad3 p{
+    color: #5c5b5b;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+@media(max-width: 600px){
+    
     #nav2 h4{
         display: none;
     }
     #cen h1{
-        font-size: 40px;
-        line-height: 120%;
+        font-size: 10vw;
+        line-height: 50px;
+        margin-top: 0;
         
+    }
+    #cen p{
+        font-size: 4vw;
+        margin-top: 10px;
     }
     #cen{
         width: 100vw;
+        padding-top: 25px;
         
         
     }
@@ -201,9 +316,34 @@ img{
         display: none;
     }
     img{
-        padding-top: 15%;
+        height: 40vh;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 100%;
+        
     }
     #nav3 #men{
         display: block;
+    }
+    #nad h1{
+        font-size:9vw ;
+        padding-bottom: 5%;
+        text-align: center;
+        line-height: 40px;
+        
+        
+    }
+    #nad p{
+        font-size: 3.5vw;
+    }
+    .elem{
+        height: 80vh;
+        width: 70vh;
+    }
+    #nad3 h2{
+        font-size:8vw
+    }
+    #nad3 p{
+        font-size: 3.5vw; 
     }
 }
